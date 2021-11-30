@@ -16,7 +16,7 @@ print ("Connected to client at ", address)
 #pick a large output buffer size because i dont necessarily know how big the incoming packet is
 while True:
     try:
-        output = input() 
+        output = input() + "\n"
         conn.send(output.encode('utf-8'))
     except socket.error:
         print ("Error Occured.")
